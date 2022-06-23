@@ -16,9 +16,13 @@ public class Main {
 
         // Задание 3
         String fullName2 = "Иванов Семён Семёнович";
-        if (fullName2.contains("ё")) {
-            System.out.println("Данные ФИО сотрудника — " + fullName2.replace('ё', 'е'));
-        } else System.out.println("Данные ФИО сотрудника — " + fullName2);
+        String fullName3 = fullName2.replace('ё', 'е');
+        String[] words = fullName3.split(" ");
+        System.out.print("Данные ФИО сотрудника — ");
+        for (int i = 0; i < words.length; i++) {
+            System.out.print(words[i] + " ");
+
+        }
 
     }
 }
